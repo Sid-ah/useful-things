@@ -3,7 +3,7 @@
 alias lsp="~/.fulltree.sh"
  
 **fulltree.sh**
-
+```
 #!/bin/sh
 #############################################
 # Script that displays a recursive formatted folder and file listing
@@ -43,10 +43,10 @@ ls -Rhl | sed \
 | sed -e '/[^/]*\//,// s/^\t|/\t&/' -e '/^\t\t/,/'$BREAK'/  s/'$BREAK'/\t&/' -e 's/[^/]*\//\t\t\| /' \
 | sed -e '/[^/]*\//,// s/^\t\t/\t&/' -e 's/[^/]*\//\t\t\t\| /'
 echo $BREAK
-
+```
 **Copy**
-pbcopy < file.txt
+`pbcopy < file.txt`
 
 **Paste**
-pbpaste > file.txt
+`pbpaste > file.txt`
 
